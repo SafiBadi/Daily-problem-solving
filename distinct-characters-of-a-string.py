@@ -13,16 +13,15 @@ def printDistinct(str):
     # Count array with frequency of
     # characters
     for i in range (len(str)):
-        if(str[i] != ''):
+        if(str[i] != ' '):
             count[ord(str[i])] += 1
  
     # Print characters having count = 1
     for i in range(len(str)):
         if (count[ord(str[i])] == 1):
             print (str[i], end = "")
-    print('\n',count[32])
  
 # Driver Code
 
-str = "Hello world"
+str = "world Hello "
 printDistinct(str)
